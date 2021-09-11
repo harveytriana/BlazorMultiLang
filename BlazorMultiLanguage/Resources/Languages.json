@@ -65,7 +65,7 @@
     "ES": "Pronóstico del Tiempo"
   },
   {
-    "Id": "weather-forecast-desc",
+    "Id": "weather-desc",
     "EN": "This component demonstrates fetching data from the server.",
     "ES": "Este componente demuestra cómo obtener datos del servidor."
   },

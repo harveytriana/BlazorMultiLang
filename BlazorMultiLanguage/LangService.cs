@@ -115,15 +115,15 @@ namespace BlazorMultiLanguage
         }
     }
 
-    class TextResource
-    {
-        public string Id { get; set; } // Key
-        public string EN { get; set; } // English
-        public string ES { get; set; } // Spanish
-        public string PT { get; set; } // Portuguese
-        public string RU { get; set; } // Russian 
-        public string NO { get; set; } // Norwegian
-        public string IT { get; set; } // Italian
-        // ...
-    }
+    record TextResource
+    (
+        string Id, // Key
+        string EN, // English
+        string ES, // Spanish
+        string PT, // Portuguese
+        string RU, // Russian 
+        string NO, // Norwegian
+        string IT  // Italian
+                   // ...
+    );
 }
