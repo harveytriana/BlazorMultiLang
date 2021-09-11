@@ -117,13 +117,13 @@ namespace BlazorMultiLanguage
 
     class TextResource
     {
-        public string Id { get; set; }
-        public string EN { get; set; }
-        public string ES { get; set; }
-        public string PT { get; set; }
-        public string RU { get; set; }
-        public string NO { get; set; }
-        public string IT { get; set; }
-        // ...and so forth
+        public string Id { get; set; } // Key
+        public string EN { get; set; } // English
+        public string ES { get; set; } // Spanish
+        public string PT { get; set; } // Portuguese
+        public string RU { get; set; } // Russian 
+        public string NO { get; set; } // Norwegian
+        public string IT { get; set; } // Italian
+        // ...
     }
 }
