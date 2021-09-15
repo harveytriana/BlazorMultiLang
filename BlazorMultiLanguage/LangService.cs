@@ -12,8 +12,8 @@ using Microsoft.JSInterop;
 namespace BlazorMultiLanguage
 {
     public class LangService {
-        public static string CurrentLanguage { get; private set; }
-        public static string[] Languages { get; private set; }
+        public static string CurrentCulture { get; private set; }
+        public static string[] Cultures { get; private set; }
 
         // to simplify reflexion
         static readonly Type _textResourcesType = typeof(TextResource);
@@ -26,7 +26,7 @@ namespace BlazorMultiLanguage
         void NotifyStateChanged() => OnChange?.Invoke();
 
         // preserve user language
-        const string LSKEY = "AppLanguage";
+        const string STORAGESKEY = "CurrentCulture";
 
         // to manage localStorage
         readonly IJSRuntime _jsRuntime;
@@ -38,12 +38,13 @@ namespace BlazorMultiLanguage
         public async Task LoadLanguageAsync(string lang = null) {
             if (lang == null) {
                 // get storage user language
-                var l = await _jsRuntime.InvokeAsync<string>("localStorage.getItem", LSKEY);
+                var l = await _jsRuntime.InvokeAsync<string>("localStorage.getItem", STORAGESKEY);
                 lang = l ?? "EN"; // set default
             }
-            if (CurrentLanguage == lang) {
+            if (CurrentCulture == lang) {
                 return;
             }
+            CurrentCulture = lang;
             try {
                 // load from embedded resource
                 var js = ResourceReader.Read("Languages.json");
@@ -55,13 +56,14 @@ namespace BlazorMultiLanguage
                     }
                     ls.Add(i.Id, GetText(i, lang));
                 }
-                // let statics
+                // let data
                 _textResources = ls.ToImmutableDictionary();
-                CurrentLanguage = lang;
+                
+                // for SetLanguagage
                 GetLanguagesList(items.First());
-
+                
                 // save local storage
-                await _jsRuntime.InvokeVoidAsync("localStorage.setItem", LSKEY, lang);
+                await _jsRuntime.InvokeVoidAsync("localStorage.setItem", STORAGESKEY, lang);
 
                 // notify
                 NotifyStateChanged();
@@ -75,7 +77,7 @@ namespace BlazorMultiLanguage
         /// </summary>
         /// <param name="textResource">The first or any item</param>
         static void GetLanguagesList(TextResource textResource) {
-            if (Languages is not null) {
+            if (Cultures is not null) {
                 return;
             }
             var ls = new List<string>();
@@ -87,11 +89,7 @@ namespace BlazorMultiLanguage
                     ls.Add(p.Name);
                 }
             }
-            Languages = ls.ToArray();
-            
-            // temporary by example
-            Console.WriteLine("Currrent Language   : {0}", CurrentLanguage);
-            Console.WriteLine("Available Languages : {0}", string.Join(" ", Languages));
+            Cultures = ls.ToArray();
         }
 
         /// <summary>

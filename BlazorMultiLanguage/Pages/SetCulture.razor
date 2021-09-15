@@ -4,7 +4,7 @@
 <h3>@_ls["set-lang"]</h3>
 <hr />
 <div>
-    @foreach (var i in LangService.Languages) {
+    @foreach (var i in LangService.Cultures) {
         <div class="form-check">
             <input class="form-check-input" type="radio" name="@i" checked="@(lang==i)" @onclick="()=>ChangeLang(i)">
             <label class="form-check-label" for="@i"> @_ls[i.ToString().ToLower()]</label>
@@ -20,7 +20,7 @@
 
     protected override void OnInitialized()
     {
-        lang = LangService.CurrentLanguage;
+        lang = LangService.CurrentCulture;
     }
 
     async Task ChangeLang(string selectedLang)
