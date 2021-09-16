@@ -1,6 +1,7 @@
-﻿// --------------------------------
-// blazorspread.net
-// --------------------------------
+﻿/*
+BlazorMultiLanguage :: LangService
+blazorspread.net
+*/
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
