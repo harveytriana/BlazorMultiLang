@@ -3,11 +3,11 @@
 
 <h3>@_ls["set-lang"]</h3>
 <hr />
-<div>
+<div style="font-size:15px;">
     @foreach (var i in LangService.Cultures) {
         <div class="form-check">
             <input class="form-check-input" type="radio" name="@i" checked="@(lang==i)" @onclick="()=>ChangeLang(i)">
-            <label class="form-check-label" for="@i"> @_ls[i.ToString().ToLower()]</label>
+            <label class="form-check-label" for="@i" style="margin-left:6px;"> @_ls[i.ToString().ToLower()]</label>
         </div>
         <br>
     }

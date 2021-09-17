@@ -1,117 +1,245 @@
 ﻿[
   {
     "Id": "main-title",
-    "EN": "Blazor Multi-Language",
-    "ES": "Blazor Multi-Lenguaje"
+    "EN": "Multilanguage Demo",
+    "ES": "Demostración de Multilenguaje",
+    "PT": "Demonstração multilíngue",
+    "RU": "Многоязычная демонстрация",
+    "NO": "Flerspråklig demo",
+    "IT": "Demo multilingue"
   },
   {
     "Id": "ready",
     "EN": "Ready",
-    "ES": "Listo"
+    "ES": "Listo",
+    "PT": "Preparar",
+    "RU": "Готовый",
+    "NO": "Klar",
+    "IT": "Pronto"
   },
   {
     "Id": "loading",
     "EN": "Loading",
-    "ES": "Cargando"
+    "ES": "Cargando",
+    "PT": "Carregando",
+    "RU": "Загрузка",
+    "NO": "Laster inn",
+    "IT": "Caricamento in corso"
   },
   {
     "Id": "set-lang",
     "EN": "Set Language",
-    "ES": "Establecer Idioma"
+    "ES": "Establecer Idioma",
+    "PT": "Definir idioma",
+    "RU": "Установить язык",
+    "NO": "Angi språk",
+    "IT": "Imposta lingua"
   },
   {
     "Id": "cur-lang",
     "EN": "Current language",
-    "ES": "Lenguaje actual"
-  },
-  {
-    "Id": "es",
-    "EN": "Spanish",
-    "ES": "Español"
+    "ES": "Lenguaje actual",
+    "PT": "Idioma atual",
+    "RU": "Текущий язык",
+    "NO": "Nåværende språk",
+    "IT": "Lingua corrente"
   },
   {
     "Id": "en",
     "EN": "English",
-    "ES": "Inglés"
+    "ES": "Inglés",
+    "PT": "inglês",
+    "RU": "английский",
+    "NO": "Engelsk",
+    "IT": "Inglese"
+  },
+  {
+    "Id": "es",
+    "EN": "Spanish",
+    "ES": "Español",
+    "PT": "espanhol",
+    "RU": "испанский",
+    "NO": "Spansk",
+    "IT": "spagnolo"
+  },
+  {
+    "Id": "pt",
+    "EN": "Portuguese",
+    "ES": "Portugués",
+    "PT": "Português",
+    "RU": "португальский",
+    "NO": "Portugisisk",
+    "IT": "Portoghese"
+  },
+  {
+    "Id": "ru",
+    "EN": "Russian",
+    "ES": "Ruso",
+    "PT": "Russo",
+    "RU": "русский",
+    "NO": "Russisk",
+    "IT": "Russo"
+  },
+  {
+    "Id": "no",
+    "EN": "Noruego",
+    "ES": "Norwegian",
+    "PT": "Norueguês",
+    "RU": "Норвежский",
+    "NO": "Noruego",
+    "IT": "Noruego"
+  },
+  {
+    "Id": "it",
+    "EN": "Italian",
+    "ES": "Italiano",
+    "PT": "Italiano",
+    "RU": "Итальянский",
+    "NO": "Italiensk",
+    "IT": "Italiano"
   },
   {
     "Id": "home",
     "EN": "Home",
-    "ES": "Inicio"
+    "ES": "Inicio",
+    "PT": "Casa",
+    "RU": "Дом",
+    "NO": "Hjem",
+    "IT": "Casa"
   },
   {
     "Id": "counter",
     "EN": "Counter",
-    "ES": "Contador"
+    "ES": "Contador",
+    "PT": "Contador",
+    "RU": "Прилавок",
+    "NO": "Disk",
+    "IT": "Contatore"
   },
   {
     "Id": "fetch-data",
     "EN": "Fetch data",
-    "ES": "Leer Datos"
+    "ES": "Leer Datos",
+    "PT": "Obter dados",
+    "RU": "Получить данные",
+    "NO": "Hent data",
+    "IT": "Recupera dati"
   },
   {
     "Id": "current-count",
     "EN": "Current count",
-    "ES": "Contador actual"
+    "ES": "Contador actual",
+    "PT": "Contagem atual",
+    "RU": "Текущий счет",
+    "NO": "Gjeldende telling",
+    "IT": "Conteggio attuale"
   },
   {
     "Id": "click-me",
     "EN": "Click me",
-    "ES": "Clic acá"
+    "ES": "Clic acá",
+    "PT": "Clique em mim",
+    "RU": "Нажми на меня",
+    "NO": "Klikk på meg",
+    "IT": "Cliccami"
   },
   {
     "Id": "weather-forecast",
     "EN": "Weather forecast",
-    "ES": "Pronóstico del Tiempo"
+    "ES": "Pronóstico del Tiempo",
+    "PT": "Previsão do tempo",
+    "RU": "Прогноз погоды",
+    "NO": "Værmelding",
+    "IT": "Previsioni del tempo"
   },
   {
     "Id": "weather-desc",
     "EN": "This component demonstrates fetching data from the server.",
-    "ES": "Este componente demuestra cómo obtener datos del servidor."
+    "ES": "Este componente demuestra cómo obtener datos del servidor.",
+    "PT": "Este componente demonstra a obtenção de dados do servidor.",
+    "RU": "Этот компонент демонстрирует получение данных с сервера.",
+    "NO": "Denne komponenten viser henting av data fra serveren.",
+    "IT": "Questo componente mostra il recupero dei dati dal server."
   },
   {
     "Id": "date",
     "EN": "Date",
-    "ES": "Fecha"
+    "ES": "Fecha",
+    "PT": "Encontro",
+    "RU": "Дата",
+    "NO": "Dato",
+    "IT": "Data"
   },
   {
     "Id": "t-c",
     "EN": "Temp. (C)",
-    "ES": "Temp. (C)"
+    "ES": "Temp. (C)",
+    "PT": "Temp. (C)",
+    "RU": "Темп. (С)",
+    "NO": "Temp. (C)",
+    "IT": "Temp. (C)"
   },
   {
     "Id": "t-f",
     "EN": "Temp. (F)",
-    "ES": "Temp. (F)"
+    "ES": "Temp. (F)",
+    "PT": "Temp. (F)",
+    "RU": "Темп. (F)",
+    "NO": "Temp. (F)",
+    "IT": "Temp. (F)"
   },
   {
     "Id": "summary",
     "EN": "Summary",
-    "ES": "Resumen"
+    "ES": "Resumen",
+    "PT": "Resumo",
+    "RU": "Резюме",
+    "NO": "Sammendrag",
+    "IT": "Riepilogo"
   },
   {
     "Id": "about",
     "EN": "About",
-    "ES": "Acerca De"
+    "ES": "Acerca De",
+    "PT": "Cerca de",
+    "RU": "О",
+    "NO": "Om",
+    "IT": "Di"
   },
   {
     "Id": "info",
     "EN": "This application is a demo of LangService",
-    "ES": "Esta aplicacion es una demostración de LangService"
+    "ES": "Esta aplicacion es una demostración de LangService",
+    "PT": "Este aplicativo é uma demonstração do LangService",
+    "RU": "Это приложение представляет собой демонстрацию LangService",
+    "NO": "Denne applikasjonen er en demo av LangService",
+    "IT": "Questa applicazione è una demo di LangService"
   },
   {
     "Id": "",
     "EN": "",
-    "ES": ""
+    "ES": "",
+    "PT": null,
+    "RU": null,
+    "NO": null,
+    "IT": null
   },
   {
     "Id": "",
     "EN": "",
-    "ES": ""
+    "ES": "",
+    "PT": null,
+    "RU": null,
+    "NO": null,
+    "IT": null
   },
   {
     "Id": "",
     "EN": "",
-    "ES": ""
+    "ES": "",
+    "PT": null,
+    "RU": null,
+    "NO": null,
+    "IT": null
   }
 ]
